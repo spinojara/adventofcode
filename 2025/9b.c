@@ -4,16 +4,6 @@
 #include <string.h>
 #include <errno.h>
 
-unsigned long long sizex, sizey;
-
-size_t arr_index(size_t k, size_t size) {
-	return k % size;
-}
-
-size_t index(unsigned long long x, unsigned long long y) {
-	return x + sizex * y;
-}
-
 int main(void) {
 	time_t t = clock();
 	FILE *file = fopen("9.txt", "r");
