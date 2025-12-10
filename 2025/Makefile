@@ -4,7 +4,7 @@ CWARNINGS = -Wall -Wextra -Wshadow -pedantic
 ARCH = native
 COPTIMIZE = -O2 -march=$(ARCH) -flto
 CFLAGS = $(CSTANDARD) $(CWARNINGS) $(COPTIMIZE)
-LDFLAGS = $(CFLAGS)
+LDFLAGS = $(CFLAGS) -lm
 
 %: %.c
 	$(CC) $(LDFLAGS) $< -o $@
