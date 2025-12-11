@@ -1,5 +1,5 @@
 CC = cc
-CSTANDARD = -std=c99 -fsanitize=address,undefined
+CSTANDARD = -std=c99
 CWARNINGS = -Wall -Wextra -Wshadow -pedantic
 ARCH = native
 COPTIMIZE = -O2 -march=$(ARCH) -flto
